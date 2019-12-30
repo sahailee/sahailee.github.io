@@ -286,7 +286,7 @@ footer.foot h3 a:hover, footer.foot ul.myLinks li a:hover {
 
 
 /*####### Mobile ############*/
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1000px) {
     ul.topnavbar li {
         display: none;
     }
