@@ -2,153 +2,196 @@
 <html lang="en">
     <head>
         <title>Sahail Jaffary</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/d427280028.js" crossorigin="anonymous"></script>
     </head>
     
     <body>
-        <nav>
-            <ul class="topnavbar" id="dropdownClick">
-                <li><a href="index.html">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown-icon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
-            </ul>
-        </nav>
-        
         <div class="container">
-            <div class="row">
-                <div class="col-5">
-                    <div class="leftside-col">
-                        <h1 class="attentionGrabber">Hey There!</h1>
-                        <h2 class="attentionSubtext">I'm Sahail Jaffary, welcome to my site!</h2>
-                    </div>
-                </div>
-                <div class="col-7">
-                    <div class="rightside-col">
-                        <div class="myPicture">
-                            <img src="Assets/IMG_3312.JPG">
-                        </div>
-                    </div>
+            <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">ساحل</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
         
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <div class="myInfo">
-                        <p>I am a Sophomore at Stony Brook University pursuing a Bachelor of Science degree in Computer Science as well as a degree in Applied Mathematics and Statistics. 
-                            My interest in computer science first began in high school as a hobby. I came up with an idea for a mobile game after completing a math midterm. Inspired, I went home and began learning the process of making mobile games. 
-                            As I learned more, I became more interested in Computer Science as coding felt like a game itself. Writing code is a series of beautiful puzzles and solving them is the greatest feeling in the world. I love talking about 
-                            Polygons(the mobile game from above) and any Computer Science homework or project I make because it is something I’ve created and put all my effort into.
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-5 align-self-center">
+                        <h1 class="attentionGrabber">Hey There!</h1>
+                        <h2 class="attentionSubtext">I'm Sahail Jaffary, welcome to my site!</h2>
+                        <!-- Let's put the image in a carousel. -->
+                    </div>
+                    <div class="col-12 col-lg-7">
+                            <img src="Assets/IMG_3312.JPG" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-12">
+                        <p class="lead">
+
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+        
         <hr id="projects">
-        <div class="container">
-            <div class="row">
-                <div class="col-5">
-                    <div class="leftside-col">
-                        <h1 class="attentionGrabber"><a>Projects</a></h1>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class=""><a>Projects</a></h1>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <div class="projectImage">
-                        <img src="Assets/polygons.png">
-                        <a href="https://play.google.com/store/apps/details?hl=en_US&id=com.TeamPhysik.Polygons">
-                            <div class="overlay">
-                                <div class="projectImageText">
-                                    <h2 class="attentionSubtext">Polygons TP</h2>
-                                    <p>This project introduced me to the beautiful world of Computer Science. I came up with the idea to make this game during a calculus midterm. I learned some basic C# and how to use the Unity game engine. I made every asset for the project using Adobe Photoshop. My role in this project was the group leader. I assigned everyone what to do and took on the brunt of the project. I was driven by passion to get this game made and I'll always be proud of it.</p>
-                                    <h5>Click to visit site</h5>
-                                </div>
+                <div class="row row-cols-1 row-cols-md-3 text-center">
+                    <div class="col mb-4">
+                        <div class="card border-dark mb-3 h-100">
+                            <div class="card-body">
+                                <img src="Assets/aigwthumb.png" class="card-img-top">
+                                    <h5 class="card-title">AI GhostWriter</h2>
+                                    <p class="card-text">
+                                        I created this webapp to generate lyrics in the style of some of today's most popular artists.
+                                        I used Flask to run run the backend and generate the text from the machine learning models.
+                                        To host the webapp, I used Compute Engine from Google Cloud Platform. There are two different text generation models
+                                        being used in the webapp. I trained one of the models from scratch and created it using Tensorflow and Keras. The other model
+                                        is Openai's GPT-2 model, which is vastly superior to my model, but it is very large.
+                                    </p>
+                                    <a href="http://aighostwriter.com/" class="btn btn-primary">Check it out</a>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="projectImage">
-                        <img src="Assets/wing.png">
-                        <a href="https://thewingapp.com/">
-                            <div class="overlaySlideFromTop">
-                                <div class="projectImageText">
-                                    <h2 class="attentionSubtext">Wing</h2>
-                                    <p>I was in charge of implementing the back-end and various features for the app. I worked with Firebase to handle the creation of in-app events and friends and implemented the features to create, load, and remove events, invite friends to the app, invite friends to an event, add and remove friends from the friends list and many more features. A big lesson from this project is the importance of debugging and documenting code as without it, the project could get extremely messy especially because of the multithreading.</p>
-                                    <h5>Click to visit site</h5>
-                                </div>
+                    <div class="col mb-4">
+                        <div class="card border-dark mb-3 h-100">
+                            <div class="card-body">
+                                <img src="Assets/wing.png" class="card-img-top">
+                                <h5 class="card-title">Wing</h2>
+                                <p class="card-text">I was in charge of implementing the back-end and various features for the app. I worked with Firebase to handle the creation of in-app events and friends and implemented the features to create, load, and remove events, invite friends to the app, invite friends to an event, add and remove friends from the friends list and many more features. A big lesson from this project is the importance of debugging and documenting code as without it, the project could get extremely messy especially because of the multithreading.</p>
+                                <a href="https://thewingapp.com/" class="btn btn-primary">Check it out</a>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="projectImage">
-                        <img src="Assets/btcrockthumb.png">
-                        <a href="https://sahailee.github.io/bitcoin-rocket/">
-                            <div class="overlay">
-                                <div class="projectImageText">
-                                    <h2 class="attentionSubtext">Bitcoin Rocket</h2>
-                                    <p>This project was my submission for the SBU 2019 hackathon. It is a small game made using Vue.js where a user is supposed to predict the price of bitcoin in the next 5 seconds. I worked with CryptoCompare API to get the current price of Bitcoin. With this project I dipped my toes in the water of React and VueJS. Currently, I have been working more with React, so be on the lookout for another project but using React.</p>
-                                    <h5>Click to visit site</h5>
-                                </div>
+                    <div class="col mb-4">
+                        <div class="card border-dark mb-3 h-100">
+                            <div class="card-body">
+                                <img src="Assets/polygons.png" class="card-img-top">
+                                <h5 class="card-title">Polygons TP</h5>
+                                <p class="card-text">This project introduced me to the beautiful world of Computer Science. I came up with the idea to make this game during a calculus midterm. I learned some basic C# and how to use the Unity game engine. I made every asset for the project using Adobe Photoshop. My role in this project was the group leader. I assigned everyone what to do and took on the brunt of the project. I was driven by passion to get this game made and I'll always be proud of it.</p>
+                                <a href="https://play.google.com/store/apps/details?hl=en_US&id=com.TeamPhysik.Polygons"
+                                    class="btn btn-primary">Available on the Play Store</a>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <div class="projectImage center-col">
-                        <img src="Assets/lilisthumb.png">
-                        <a href="http://liliswaxingandthreadingstudio.com/">
-                            <div class="overlaySlideFromTop">
-                                <div class="projectImageText">
-                                    <h2 class="attentionSubtext">Lili's Waxing and Threading Studio</h2>
-                                    <p>I made this website for a small threading salon located in New York City. I also designed their logo using Photoshop which you can see in the top left corner of the site and as the favicon. I think the logo looks really cool and wanted to point that out.</p>
-                                    <h5>Click to visit site</h5>
-                                </div>
+                    <div class="col mb-4">
+                        <div class="card border-dark mb-3 h-100">
+                            <div class="card-body">
+                                <img src="Assets/lilisthumb.png" class="card-img-top">
+                                    <h5 class="card-title">Lili's Waxing and Threading Studio</h2>
+                                    <p class="card-text">I made this website for a small threading salon located in New York City. I also designed their logo using Photoshop which you can see in the top left corner of the site and as the favicon. I think the logo looks really cool and wanted to point that out.</p>
+                                    <a href="http://liliswaxingandthreadingstudio.com/" class="btn btn-primary">Check it out</a>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <ul class="skillStack">
-                        <li><i class="fab fa-java"></i></li>
-                        <li><p>I began learning Java in my junior year of high school and have been learning more of it ever since. At Stony Brook, the Computer Science courses are all mostly taught in Java. I have developed a great sense of Object-Oriented Programming and other cs principles like functional programming that would I can apply with many other, but with Java my bag of tricks is a lot bigger.</p></li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <ul class="skillStack">
-                        <li><i class="fab fa-swift"></i></li>
-                        <li><p>I learned Swift over the summer to work on the Wing app. I am just as proficient in Swift as I am in Java since I feels there is a lot correlations between the two languages. Currently, I'm trying to stay up to date by learning the new SwiftUI. I feel confident in my ability to make an iOS application from start to finsih using Swift and XCode.</p></li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <ul class="skillStack">
-                        <li><i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i></li>
-                        <li><p>I created this website using pure HTML and CSS with some Javascript as well. I have used javascript before to do scrpting for Photoshop in order to automate a specific edit I'd always repeat. I would say I'm still a beginner with Javascript, not as proficient in it yet.</p></li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <ul class="skillStack">
-                        <li><i class="fab fa-python"></i></li>
-                        <li><p>I learned Python in the summer before my freshman year of college through MiT's open courseware available online and learned even more in my Programming Paradigms course at Stony Brook University (cse 216).</p></li>
-                    </ul>
+                    <div class="col mb-4">
+                        <div class="card border-dark mb-3 h-100">
+                            <div class="card-body">
+                                <img src="Assets/btcrockthumb.png" class="card-img-top">
+                                <h5 class="card-title">Bitcoin Rocket</h2>
+                                <p class="card-text">This project was my submission for the SBU 2019 hackathon. It is a small game made using Vue.js where a user is supposed to predict the price of bitcoin in the next 5 seconds. I worked with CryptoCompare API to get the current price of Bitcoin. With this project I dipped my toes in the water of React and VueJS. Currently, I have been working more with React, so be on the lookout for another project but using React.</p>
+                                <a href="https://sahailee.github.io/bitcoin-rocket/" class="btn btn-primary">Check it out</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="honorableMention">
-            <ul>
-                <li>Some Honorable Mentions:</li>
-                <li><a>MIPS, OCaml, Photoshop</a></li>
-            </ul>
+        <hr>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="">Skills</h1>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-3">
+                        <figure class="figure">
+                            <i class="fab fa-java figure-img icons"></i>
+                            <figcaption class="figure-caption">
+                                Java
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-3">
+                        <figure class="figure">
+                            <i class="fab fa-swift figure-img icons"></i>
+                            <figcaption class="figure-caption">
+                                Swift
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-3">
+                        <figure class="figure">
+                            <i class="fab fa-html5 figure-img icons"></i><i class="fab fa-css3-alt figure-img icons"></i>
+                            <figcaption class="figure-caption">
+                                HTML & CSS
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-3">
+                        <figure class="figure">
+                            <i class="fab fa-python fig-img icons"></i>
+                            <figcaption class="figure-caption">
+                                Python</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-3">
+                        <figure class="figure">
+                            <figcaption class="figure-caption">
+                                C</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-3">
+                        <figure class="figure">
+                            <figcaption class="figure-caption">
+                                OCaml</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-3">
+                        <figure class="figure">
+                            <figcaption class="figure-caption">
+                                MIPS</figcaption>
+
+                        </figure>
+                    </div>
+                    <div class="col-3">
+                        <figure class="figure">
+                            <figcaption class="figure-caption">
+                                Photoshop</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
         </div>
+            
         <hr>
         <div class="container">
             <div class="row">
@@ -161,49 +204,52 @@
             <div class="row">
                 <div class="col-6">
                     <div class="myInfo">
-                        <p>I'm currently looking for Summer 2020 Internship opportunities in software development. I would love any position in mobile app development and any back-end roles. I am also open to working on front ends of websites and other applications. I'm very interested in Machine Learning opportunites where I can learn more about it as I have no experience with Machine Learning, but I'm very curious and want to get hands on learning. I'm also open to requests for free lance opportunities regarding websites and mobile apps. Please feel free to email me for additional information about freelance work, elaboration on any of my past experiences and skills, or just to say hello :) 
-                        <br><br>
-                        You can reach me at: <a href="mailto:sahailjaffary@gmail.com">sahailjaffary@gmail.com</a><br><br>
-                        And my resume: <a href="Assets/2019SahailJaffaryResume.pdf">resume.pdf</a>
+                        <p class="lead">I'm currently looking for Summer 2021 Internship opportunities in software development. 
+                            I'm also open to requests for free lance opportunities regarding websites and mobile apps. 
+                            Please feel free to email me for additional information about freelance work, 
+                            elaboration on any of my past experiences and skills, or just to say hello :) 
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        
-        
-        
-        <footer class="foot">
-            <div class="row">
-                <div class="col-6">
-                    <h3>Website developed and designed by Sahail Jaffary.
-                    <br>Email: <a href="mailto:sahailjaffary@gmail.com">sahailjaffary@gmail.com</a>
-                    </h3>
-                </div>
-                <div col-6>
-                    <ul class="myLinks">
-                        <li><a href="Assets/2019SahailJaffaryResume.pdf">Resume</a></li>
-                        <li><a href="https://www.linkedin.com/in/sahail-jaffary-111792192"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/sahailee"><i class="fab fa-github-square"></i></a></li>
-                        <li><a href="https://www.instagram.com/sahailj/?hl=en"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
+        <hr>
+        <div class="container-fluid text-center">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6">
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <figure class="figure">
+                                <a href="mailto:sahailjaffary@gmail.com"><i class="fa fa-envelope figure-img icons" aria-hidden="true"></i></a>
+                                <figcaption class="figure-caption">Email</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-2">
+                            <figure class="figure">
+                                <a href="https://github.com/sahailee"><i class="fab fa-github-square figure-img icons"></i></a>
+                                <figcaption class="figure-caption">Github</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-2">
+                            <figure class="figure">
+                                <a href="https://www.linkedin.com/in/sahail-jaffary-111792192"><i class="fab fa-linkedin figure-img icons"></i></a>
+                                <figcaption class="figure-caption">LinkedIn</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-2">
+                            <figure class="figure">
+                                <a href="Assets/resume.pdf"><i class="fa fa-file-text figure-img icons" aria-hidden="true"></i></a>
+                                <figcaption class="figure-caption">Resume</figcaption>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     
     </body>
-    
-    <script>
-            function dropdownMenu() {
-                var x = document.getElementById("dropdownClick");
-                if (x.className === "topnavbar") {
-                    x.className += " responsive";
-                    //Change topnav to topnav.responsive
-                }
-                else {
-                    x.className = "topnavbar";
-                }
-            }
-        </script>
     
 </html>
